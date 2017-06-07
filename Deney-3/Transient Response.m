@@ -28,7 +28,7 @@ figure
 pzmap(ts1)
 
 
-
+%***************************
 
 s= tf('s');
 sys1 =tf([12],[1 8 12]);
@@ -47,6 +47,7 @@ hold on
 pause
 step(sys4)
 hold on
+
 %************************
 
 clc
