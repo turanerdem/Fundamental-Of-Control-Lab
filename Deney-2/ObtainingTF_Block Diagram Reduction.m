@@ -8,7 +8,7 @@ for i=1:1:3
     A=tf([1.4*k(i)],[1 0]);
     B=tf([k(i)],[1]);
     
-    sys1=parallel(A,B);
+    sys1=parallel(A,B); %Tanımlanan A ve B için transfer fonksiyon aritmetikleri burada başlıyor
     sys2=series(C,D);
     sys3=feedback(sys2,C);
     sys4=series(sys3,sys1);
